@@ -1,4 +1,0 @@
-interface:
-  display_name: "Go Live"
-  short_description: "Deploy app and website changes to a public URL."
-  default_prompt: "Deploy each app or website change to a public URL and verify it loads."
