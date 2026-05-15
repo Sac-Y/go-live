@@ -8,4 +8,5 @@ node_modules/
 dist/
 build/
 tmp/
+assets/
 *.log

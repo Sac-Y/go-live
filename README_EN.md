@@ -2,10 +2,6 @@
 
 # Go Live.skill
 
-<p align="center">
-  <img src="assets/go-live-cover.png" alt="Go Live skill cover" />
-</p>
-
 > *Ship the change, then send the public link.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
