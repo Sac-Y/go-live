@@ -1,6 +1,6 @@
 ---
 name: go-live
-description: 当用户正在构建、修改或 vibe-coding 一个应用、网站、原型或前端页面，并希望每次改动完成后都立刻部署到公开的生产或预览 URL，方便用手机或远程设备查看时使用。触发词包括明确提到 "Go Live"、"go live"、"auto deploy"、"deploy every change"、"send me a deployed link"，或类似“改完就给我一个公开链接”的需求。
+description: 当用户正在构建、修改或 vibe-coding 一个应用、网站、原型或前端页面，并希望每次改动完成后都立刻部署到公开的生产或预览 URL，方便用手机或远程设备查看时使用。触发词包括“上线模式”“改完就上线”“自动部署”“每次改完都部署”“给我一个公开链接”“发我部署链接”“手机能打开的链接”“远程预览”，也包括 "Go Live"、"go live"、"auto deploy" 等类似请求。
 ---
 
 # Go Live
