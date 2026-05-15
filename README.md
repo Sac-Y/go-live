@@ -10,6 +10,10 @@
 
 当你在 ChatGPT mobile app 里用 Codex 改应用、网站或前端页面时，localhost 不方便预览。Go Live 会让 Codex 在改完后顺手部署和验证，并把手机能打开的公开链接发给你。
 
+**其他语言 / Other Languages:**
+
+[English](README_EN.md)
+
 </div>
 
 ---
@@ -61,40 +65,5 @@ Go Live 不绑定某个部署平台。Codex 会先看项目已有部署方式，
 ---
 
 ## License
-
-MIT
-
----
-
-## English
-
-Go Live is a Codex skill for mobile-first Codex workflows. When you use Codex from the ChatGPT mobile app, localhost is not a useful preview. Go Live asks Codex to deploy and verify the app, website, or frontend change, then send back a public URL you can open on your phone.
-
-### Install
-
-If you use Codex from the CLI:
-
-```bash
-npx skills add Sac-Y/go-live
-```
-
-If you use Codex App or Codex in the ChatGPT mobile app, tell Codex:
-
-```text
-Please install this skill:
-https://github.com/Sac-Y/go-live
-```
-
-### Usage
-
-Go Live is not tied to a specific deployment provider. Codex should first inspect the project and reuse the existing deployment path. If Vercel, Cloudflare, GitHub, or another plugin capability is needed, Codex can ask for installation or authorization during the task.
-
-After installing, say things like:
-
-```text
-"Help me preview this page on my phone. Send me a link after you finish."
-"I want to edit this site while checking it on mobile. Deploy it after each change."
-"After this frontend change, send me a public preview link."
-```
 
 MIT
