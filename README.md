@@ -2,15 +2,17 @@
 
 # Go Live.skill
 
-> *改完就上线，把公开链接当成真正的预览。*
+<p align="center">
+  <img src="assets/go-live-cover.png" alt="Go Live skill cover" />
+</p>
+
+**Localhost 到不了的地方，Go Live 帮你送达**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 [![Codex Skill](https://img.shields.io/badge/Codex-Skill-blueviolet)](https://github.com/openai/codex)
 [![Skills](https://img.shields.io/badge/skills.sh-Compatible-green)](https://skills.sh)
 
-**这是一个面向 Codex 移动端使用场景的指引型 skill。**
-
-当你在 ChatGPT mobile app 里用 Codex 改应用、网站或前端页面时，localhost 不方便预览。Go Live 会让 Codex 在改完后顺手部署和验证，并把手机能打开的公开链接发给你。
+在手机上用 Codex 改应用，最大的卡点不是写代码，是看不到效果。Go Live 让每次改动自动部署上线，给你一条手机直接能打开的链接。Vibe coding，从“写完”到“看到”，中间不再断。
 
 中文 | [English](README_EN.md)
 
