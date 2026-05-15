@@ -12,9 +12,7 @@
 
 When you use Codex from the ChatGPT mobile app, localhost is not a useful preview. Go Live asks Codex to deploy and verify the app, website, or frontend change, then send back a public URL you can open on your phone.
 
-**Other Languages:**
-
-[中文](README.md)
+English | [中文](README.md)
 
 </div>
 

@@ -12,9 +12,7 @@
 
 当你在 ChatGPT mobile app 里用 Codex 改应用、网站或前端页面时，localhost 不方便预览。Go Live 会让 Codex 在改完后顺手部署和验证，并把手机能打开的公开链接发给你。
 
-**其他语言 / Other Languages:**
-
-[English](README_EN.md)
+中文 | [English](README_EN.md)
 
 </div>
 
