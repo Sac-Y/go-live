@@ -1,56 +1,56 @@
 ---
 name: go-live
-description: Use when the user is building, editing, or vibe-coding an app, website, prototype, or frontend and wants every change deployed to a public production or preview URL immediately so they can view it from a phone or remote device. Triggers on explicit "Go Live", "go live", "auto deploy", "deploy every change", "send me a deployed link", or similar requests for live public links after app/site changes.
+description: 当用户正在构建、修改或 vibe-coding 一个应用、网站、原型或前端页面，并希望每次改动完成后都立刻部署到公开的生产或预览 URL，方便用手机或远程设备查看时使用。触发词包括明确提到 "Go Live"、"go live"、"auto deploy"、"deploy every change"、"send me a deployed link"，或类似“改完就给我一个公开链接”的需求。
 ---
 
 # Go Live
 
-## Operating Rule
+## 执行原则
 
-Treat deployment as part of the implementation, not a separate follow-up. For every app or website change, ship a public URL the user can open immediately.
+把部署视为实现工作的一部分，而不是事后补做的步骤。每次修改应用或网站后，都要交付一个用户能立即打开的公开 URL。
 
-This skill exists for phone-first vibe coding: the user may not be able to inspect localhost, so a deployed link is the real preview.
+这个 skill 面向手机优先的 vibe coding 场景：用户不一定方便查看 localhost，所以真正可用的预览应该是已部署的公开链接。
 
-## Workflow
+## 工作流程
 
-1. Identify the app or website being edited and its existing deployment path.
-2. Make the requested code/content/design change.
-3. Run the fastest meaningful local check available for the stack, such as build, lint, typecheck, unit test, or smoke test.
-4. Deploy the changed app to the public target.
-5. Verify the deployed URL loads the changed experience.
-6. Reply with the public link, what changed, and the verification result.
+1. 确认正在修改的应用或网站，以及它已有的部署路径。
+2. 完成用户要求的代码、内容或设计修改。
+3. 运行当前技术栈里最快且有意义的本地检查，例如 build、lint、typecheck、单元测试或 smoke test。
+4. 把修改后的应用部署到公开目标。
+5. 验证已部署的 URL 能打开，并且能看到这次修改后的体验。
+6. 回复用户公开链接、改了什么，以及验证结果。
 
-## Deployment Choice
+## 部署选择
 
-Prefer the project's existing production or preview pipeline:
+优先使用项目已有的生产或预览发布流程：
 
-- Use existing npm scripts, deployment configs, CI/CD, Vercel, Netlify, Cloudflare, Firebase, GitHub Pages, or other project-specific setup when present.
-- If the project is already linked to a provider, deploy through that provider instead of inventing a new path.
-- If production deploys require commit/push, make a clean commit only when the user has asked for source control changes or the deployment pipeline requires it.
-- If there is no persistent deployment configured, create the quickest public preview available in the environment and clearly label it as a temporary preview.
+- 如果项目已有 npm scripts、部署配置、CI/CD、Vercel、Netlify、Cloudflare、Firebase、GitHub Pages 或其他项目专用部署方式，就使用现有流程。
+- 如果项目已经绑定某个部署平台，就通过该平台发布，不要另起一套部署方式。
+- 如果生产部署要求 commit/push，只有在用户要求进行版本控制操作，或部署流程确实需要时，才创建干净的提交。
+- 如果项目没有持久化部署配置，就使用当前环境里最快的公开预览方式，并明确说明这是临时预览。
 
-## Link Standard
+## 链接标准
 
-The final response must include a public URL unless deployment is genuinely blocked.
+除非部署确实被阻塞，最终回复必须包含一个公开 URL。
 
-When possible, include:
+条件允许时，回复中包括：
 
-- Public URL
-- Deployment provider or command used
-- Build/check command result
-- Short note confirming the changed screen or route was verified
+- 公开 URL
+- 使用的部署平台或命令
+- build/check 命令结果
+- 简短说明已验证变更页面或路由
 
-If deployment fails, do not stop at "failed." Explain the blocker in plain language and give the next concrete recovery step, such as missing auth, missing project link, failed build, or provider outage.
+如果部署失败，不要只说“失败了”。用清楚的话说明阻塞点，并给出下一步可执行的恢复方式，例如缺少登录授权、项目未绑定、构建失败或部署平台故障。
 
-## Cadence
+## 发布节奏
 
-For small requests, deploy once after the change is complete.
+小需求在改完后部署一次。
 
-For larger requests, deploy after each coherent user-visible increment and at minimum before the final answer. Avoid leaving the user with only a localhost link unless they explicitly ask for local-only work.
+较大的需求在每个成型的、用户可见的阶段后部署，至少要在最终回复前部署一次。除非用户明确要求只做本地工作，否则不要只留下 localhost 链接。
 
-## Guardrails
+## 约束
 
-- Do not claim a deployment succeeded until the public URL has been checked.
-- Do not expose secrets, API keys, private environment values, or private repo details in the deployed UI or final response.
-- Do not overwrite an existing production project with unrelated work. If the repo has no clear deployment target and the deployment choice could affect a real production property, pause and ask which target to use.
-- Keep the user moving: if the ideal production path is blocked, provide the fastest safe public preview alternative.
+- 在检查公开 URL 之前，不要声称部署成功。
+- 不要在部署出来的 UI 或最终回复里暴露 secrets、API keys、私有环境变量或私有仓库细节。
+- 不要用无关内容覆盖已有生产项目。如果仓库没有明确部署目标，而部署选择可能影响真实生产资产，先暂停并询问用户要部署到哪里。
+- 保持推进：如果理想的生产路径被阻塞，就提供最快且安全的公开预览替代方案。
