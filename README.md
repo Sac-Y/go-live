@@ -4,6 +4,8 @@
 
 > *改完就上线，把公开链接当成真正的预览。*
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
+[![Codex Skill](https://img.shields.io/badge/Codex-Skill-blueviolet)](https://github.com/openai/codex)
 [![Skills](https://img.shields.io/badge/skills.sh-Compatible-green)](https://skills.sh)
 
 **这是一个面向 Codex 移动端使用场景的指引型 skill。**

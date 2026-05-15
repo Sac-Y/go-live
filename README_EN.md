@@ -4,6 +4,8 @@
 
 > *Ship the change, then send the public link.*
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
+[![Codex Skill](https://img.shields.io/badge/Codex-Skill-blueviolet)](https://github.com/openai/codex)
 [![Skills](https://img.shields.io/badge/skills.sh-Compatible-green)](https://skills.sh)
 
 **Go Live is a Codex skill for mobile-first Codex workflows.**
