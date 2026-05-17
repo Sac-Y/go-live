@@ -2,6 +2,10 @@
 
 # Go Live.skill
 
+<p align="center">
+  <img src="assets/go-live-cover.png" alt="Go Live skill cover" />
+</p>
+
 **Localhost 到不了的地方，Go Live 帮你送达**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
